@@ -133,29 +133,55 @@ end
 
 
 data:extend {
-    make_particle
-    {
-        name = "electromagnetic-plant-metal-particle-small",
-        pictures = particle_animations.get_metal_particle_small_pictures({tint = {0.225, 0.329, 0.511, 1}}),
-        shadows = particle_animations.get_metal_particle_small_pictures({ tint = shadowtint(), shift = util.by_pixel (1,0)}),
-        regular_trigger_effect = nil,
-        ended_in_water_trigger_effect = default_ended_in_water_trigger_effect()
-    },
-    make_particle
-    {
-        name = "electromagnetic-plant-metal-particle-medium",
-        pictures = particle_animations.get_metal_particle_medium_pictures({tint = {0.5, 0.5, 0.5, 1}}),
-        shadows = particle_animations.get_metal_particle_medium_pictures({ tint = shadowtint(), shift = util.by_pixel (1,0)}),
-        regular_trigger_effect = small_smoke_trigger_effect(),
-        ended_in_water_trigger_effect = default_ended_in_water_trigger_effect(),
-        render_layer = "object"
-    },
-    make_particle
-    {
-        name = "electromagnetic-plant-metal-particle-big",
-        pictures = particle_animations.get_metal_particle_big_pictures({tint = {0.225, 0.329, 0.511, 1}}),
-        regular_trigger_effect = default_smoke_trigger_effect(),
-        ended_in_water_trigger_effect = default_ended_in_water_trigger_effect(),
-        render_layer = "object"
-    },
+  make_particle
+  {
+    name = "foundry-metal-particle-small",
+    pictures = particle_animations.get_metal_particle_small_pictures({tint = {0.606, 0.408, 0.512, 1}}),
+    shadows = particle_animations.get_metal_particle_small_pictures({ tint = shadowtint(), shift = util.by_pixel (1,0)}),
+    regular_trigger_effect = nil,
+    ended_in_water_trigger_effect = default_ended_in_water_trigger_effect()
+  },
+  make_particle
+  {
+    name = "foundry-metal-particle-medium",
+    pictures = particle_animations.get_metal_particle_medium_pictures({tint = {0.5, 0.5, 0.5, 1}}),
+    shadows = particle_animations.get_metal_particle_medium_pictures({ tint = shadowtint(), shift = util.by_pixel (1,0)}),
+    regular_trigger_effect = small_smoke_trigger_effect(),
+    ended_in_water_trigger_effect = default_ended_in_water_trigger_effect(),
+    render_layer = "object"
+  },
+  make_particle
+  {
+    name = "foundry-metal-particle-big",
+    pictures = particle_animations.get_metal_particle_big_pictures({tint = {0.65, 0.40, 0.35, 1}}),
+    regular_trigger_effect = default_smoke_trigger_effect(),
+    ended_in_water_trigger_effect = default_ended_in_water_trigger_effect(),
+    render_layer = "object"
+  },
+
+  make_particle
+  {
+      name = "electromagnetic-plant-metal-particle-small",
+      pictures = particle_animations.get_metal_particle_small_pictures({tint = {0.225, 0.329, 0.511, 1}}),
+      shadows = particle_animations.get_metal_particle_small_pictures({ tint = shadowtint(), shift = util.by_pixel (1,0)}),
+      regular_trigger_effect = nil,
+      ended_in_water_trigger_effect = default_ended_in_water_trigger_effect()
+  },
+  make_particle
+  {
+      name = "electromagnetic-plant-metal-particle-medium",
+      pictures = particle_animations.get_metal_particle_medium_pictures({tint = {0.5, 0.5, 0.5, 1}}),
+      shadows = particle_animations.get_metal_particle_medium_pictures({ tint = shadowtint(), shift = util.by_pixel (1,0)}),
+      regular_trigger_effect = small_smoke_trigger_effect(),
+      ended_in_water_trigger_effect = default_ended_in_water_trigger_effect(),
+      render_layer = "object"
+  },
+  make_particle
+  {
+      name = "electromagnetic-plant-metal-particle-big",
+      pictures = particle_animations.get_metal_particle_big_pictures({tint = {0.225, 0.329, 0.511, 1}}),
+      regular_trigger_effect = default_smoke_trigger_effect(),
+      ended_in_water_trigger_effect = default_ended_in_water_trigger_effect(),
+      render_layer = "object"
+  },
 }
