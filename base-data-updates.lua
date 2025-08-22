@@ -7,6 +7,8 @@ data.raw["assembling-machine"]["assembling-machine-3"].crafting_categories = {"b
 
 data.raw["assembling-machine"]["chemical-plant"].crafting_categories = {"chemistry", "chemistry-or-cryogenics", "organic-or-chemistry"}
 
+
+
 data.raw.recipe["transport-belt"].category = "pressing"
 data.raw.recipe["underground-belt"].category = "pressing"
 data.raw.recipe["splitter"].category = "pressing"
@@ -37,6 +39,9 @@ data.raw.recipe["sulfuric-acid"].category = "chemistry-or-cryogenics"
 data.raw.recipe["heavy-oil-cracking"].category = "organic-or-chemistry"
 data.raw.recipe["light-oil-cracking"].category = "organic-or-chemistry"
 data.raw.recipe["rocket-fuel"].category = "organic-or-assembling"
+
+
+data.raw.recipe["coal-liquefaction"].order = "a[oil-processing]-d[coal-liquefaction]"
 
 data.raw.recipe.sulfur.category = "chemistry-or-cryogenics"
 
