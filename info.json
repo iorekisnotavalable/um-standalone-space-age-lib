@@ -1,6 +1,6 @@
 {
   "name": "um-standalone-space-age-lib",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "author": "UltraMurlock",
   "title": "Standalone Space Age Library",
   "description": "A library required by some other standalone mods.",
@@ -8,7 +8,8 @@
     "!space-age",
     "?quality",
     "?TurboBelt",
-    "?space-exploration"
+    "?space-exploration",
+    "?modules-t4"
   ],
   "factorio_version": "2.0",
   "freezing_required": true

@@ -9,3 +9,7 @@ end
 if mods["space-exploration"] then
 	require("compatibility-scripts.space-exploration")
 end
+
+if mods["modules-t4"] then
+    require("compatibility-scripts.modules-t4")
+end
