@@ -184,4 +184,30 @@ data:extend {
       ended_in_water_trigger_effect = default_ended_in_water_trigger_effect(),
       render_layer = "object"
   },
+
+  make_particle
+  {
+    name = "cryogenic-plant-metal-particle-small",
+    pictures = particle_animations.get_metal_particle_small_pictures({tint = {0.275, 0.429, 0.411, 1}}),
+    shadows = particle_animations.get_metal_particle_small_pictures({ tint = shadowtint(), shift = util.by_pixel (1,0)}),
+    regular_trigger_effect = nil,
+    ended_in_water_trigger_effect = default_ended_in_water_trigger_effect()
+  },
+  make_particle
+  {
+    name = "cryogenic-plant-metal-particle-medium",
+    pictures = particle_animations.get_metal_particle_medium_pictures({tint = {0.5, 0.5, 0.5, 1}}),
+    shadows = particle_animations.get_metal_particle_medium_pictures({ tint = shadowtint(), shift = util.by_pixel (1,0)}),
+    regular_trigger_effect = small_smoke_trigger_effect(),
+    ended_in_water_trigger_effect = default_ended_in_water_trigger_effect(),
+    render_layer = "object"
+  },
+  make_particle
+  {
+    name = "cryogenic-plant-metal-particle-big",
+    pictures = particle_animations.get_metal_particle_big_pictures({tint = {0.275, 0.429, 0.411, 1}}),
+    regular_trigger_effect = default_smoke_trigger_effect(),
+    ended_in_water_trigger_effect = default_ended_in_water_trigger_effect(),
+    render_layer = "object"
+  },
 }
