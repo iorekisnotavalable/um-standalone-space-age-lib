@@ -4,7 +4,12 @@
   "author": "UltraMurlock",
   "title": "Standalone Space Age Library",
   "description": "A library required by some other standalone mods.",
-  "dependencies": ["!space-age", "?quality", "?TurboBelt"],
+  "dependencies": [
+    "!space-age",
+    "?quality",
+    "?TurboBelt",
+    "?space-exploration"
+  ],
   "factorio_version": "2.0",
   "freezing_required": true
 }
