@@ -38,7 +38,7 @@ if mods["space-exploration"] then
 	table.insert(data.raw["assembling-machine"]["se-space-manufactory"].crafting_categories, "cryogenics-or-assembling")
 	table.insert(data.raw["assembling-machine"]["se-space-manufactory"].crafting_categories, "crafting-with-fluid-or-metallurgy")
 
-	table.insert(data.raw["assembling-machine"]["electromagnetic-plant"].crafting_categories, "crafting-or-electromagnetics")
+
 
 
 
@@ -119,6 +119,7 @@ if mods["space-exploration"] then
 
 			addRecipeToCategory(j,"electromagnetics")
 		end
+		table.insert(data.raw["assembling-machine"]["electromagnetic-plant"].crafting_categories, "crafting-or-electromagnetics")
 	end
 
 	if mods["um-standalone-cryogenic-plant"] then
